@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://paulcodes.pro/blog",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://paulcodes.pro/og-image.png",
         width: 1200,
         height: 630,
         alt: "Paulcodes Blog — Full-Stack Developer",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blog — Paulcodes",
     description: "Real insights from real projects. Tips, tutorials, and lessons from a self-taught full-stack developer.",
-    images: ["/og-image.png"],
+    images: ["https://paulcodes.pro/og-image.png"],
   },
 };
 

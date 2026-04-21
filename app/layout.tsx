@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     url: "https://paulcodes.pro",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://paulcodes.pro/og-image.png",
         width: 1200,
         height: 630,
         alt: "Paulcodes — Full-Stack Developer",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     title: "Paulcodes — Full-Stack Developer",
     description:
       "I build fast, scalable web applications that solve real problems.",
-    images: ["/og-image.png"],
+    images: ["https://paulcodes.pro/og-image.png"],
   },
 
   icons: {
