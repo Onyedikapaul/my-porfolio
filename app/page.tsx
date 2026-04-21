@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       <Hero />
       <Work />
@@ -44,6 +44,6 @@ export default function Home() {
       <About />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }

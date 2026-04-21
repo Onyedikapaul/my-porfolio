@@ -103,7 +103,7 @@ export default function Work() {
           ref={grid.ref}
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(480px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
             gap: "1.5rem",
           }}
         >
