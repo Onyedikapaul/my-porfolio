@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://paulcodes.pro"),
   title: {
     default: "Paulcodes — Full-Stack Developer",
     template: "%s — Paulcodes",
@@ -29,6 +30,9 @@ export const metadata: Metadata = {
     "Python Developer",
     "Programmer",
     "Mobile Developer",
+    "ts developer",
+    "next developer",
+    "js developer",
     "web",
     "developer",
     "Nigeria Developer",
@@ -36,6 +40,10 @@ export const metadata: Metadata = {
     "Ebonyi Developer",
     "web developer in nigeria",
     "software engineer",
+    "react developer",
+    "python developer",
+    "node developer",
+    "laravel developer",
     "programmer in nigeria",
     "lagos developer",
     "web solution",
@@ -80,7 +88,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
       <head>
         <link rel="canonical" href="https://paulcodes.pro" />
         <script
