@@ -15,19 +15,33 @@ export default function Contact() {
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     >,
   ) => setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
+
   const onSubmit = async () => {
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill in your name, email and message.");
+      return;
+    }
     setStatus("sending");
-    await new Promise((r) => setTimeout(r, 1200));
-    setStatus("sent");
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+    if (res.ok) {
+      setStatus("sent");
+    } else {
+      setStatus("idle");
+      alert("Something went wrong. Try WhatsApp instead.");
+    }
   };
+
   const links = [
     {
       icon: <Mail size={15} />,
       label: "Email",
-      value: "hello@paulcodes.dev",
-      href: "mailto:hello@paulcodes.dev",
+      value: "hello@paulcodes.pro",
+      href: "mailto:hello@paulcodes.pro",
     },
-    // { icon:<Code2 size={15}/>, label:"GitHub", value:"github.com/paulcodes", href:"https://github.com" },
     {
       icon: <Briefcase size={15} />,
       label: "LinkedIn",
