@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     siteName: "Paulcodes",
     title: "Paulcodes — Full-Stack Developer",
     description:
-      "I build fast, scalable web applications that solve real problems.",
+      "I build the web apps your business actually needs — fast, clean, and built to last.",
     url: "https://paulcodes.pro",
     images: [
       {
